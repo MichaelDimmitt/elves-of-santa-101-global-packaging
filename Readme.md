@@ -10,14 +10,23 @@ This program is helpful for an experiment that I am working on for my screensave
 https://www.npmjs.com/package/aerial_desktop
 
 ## Usage:
-// Anything in < > field means enter your specific information
 
+first put this in terminal
 ```bash
-git clone --depth=1 https://github.com/michaeldimmitt/elves-of-santa-101-global-packaging.git <your-project-name>
-cd <your-project-name>
-npm login
-npm publish
+bangWithHammer() {
+git clone --depth=1 https://github.com/michaeldimmitt/elves-of-santa-101-global-packaging.git $1;
+cd $1;
+npm login;
+npm publish;
 
-cd ~
-npm install -g <your-project-name>
+cd ~;
+npm install -g $1;
+};
+
+```
+
+Then run bangWithHammer for your application:
+```bash
+# Anything in < > field means enter your specific information
+bangWithHammer <your application>
 ```
