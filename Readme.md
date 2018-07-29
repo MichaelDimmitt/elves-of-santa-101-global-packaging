@@ -33,3 +33,15 @@ bangWithHammer <your application>
 # run your the package after the npm install:
 playWithPackageWrapping
 ```
+
+## Example, to using the package I have already created:
+```bash
+npm install -g helloworldglobal;
+# Then this command is availiable via terminal
+playWithPackageWrapping;
+```
+
+## to uninstall
+```bash
+npm uninstall -g helloworldglobal;
+```
