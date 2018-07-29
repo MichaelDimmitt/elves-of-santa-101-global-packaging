@@ -1,0 +1,17 @@
+{
+  "name": "elves-of-santa-101-global-packaging",
+  "version": "1.0.0",
+  "description": "One implementation of how to make a global npm package.",
+  "main": "./lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "playWithPackageWrapping": "./bin/demo-global.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
