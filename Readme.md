@@ -16,17 +16,20 @@ first put this in terminal
 bangWithHammer() {
 git clone --depth=1 https://github.com/michaeldimmitt/elves-of-santa-101-global-packaging.git $1;
 cd $1;
+info='  ''"'name'"'': "'$1'",';
+sed -i '' '2s?.*?'"$info"'?' ./package.json;
+echo "Prompting for npm login information, I sure hope you know what you are doing."
 npm login;
 npm publish;
-
-cd ~;
 npm install -g $1;
 };
-
 ```
 
 Then run bangWithHammer for your application:
 ```bash
 # Anything in < > field means enter your specific information
 bangWithHammer <your application>
+
+# run your the package after the npm install:
+playWithPackageWrapping
 ```
