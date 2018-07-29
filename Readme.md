@@ -8,3 +8,16 @@ The current implementation was sourced from: https://ourcodeworld.com/articles/r
 
 This program is helpful for an experiment that I am working on for my screensaver application:
 https://www.npmjs.com/package/aerial_desktop
+
+## Usage:
+// Anything in < > field means enter your specific information
+
+```bash
+git clone --depth=1 https://github.com/michaeldimmitt/elves-of-santa-101-global-packaging.git <your-project-name>
+cd <your-project-name>
+npm login
+npm publish
+
+cd ~
+npm install -g <your-project-name>
+```
